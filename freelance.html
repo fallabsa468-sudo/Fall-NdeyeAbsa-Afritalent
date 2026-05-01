@@ -1,23 +1,199 @@
+
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>AfriTalent — freelance</title> 
+<!-- Bootstrap 5 via CDN : feuille de style --> 
+<link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+<!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
+<style>
+    body{
+        background-color:white ;
+    }
+    .card img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .rating{
+        color:yellow;
+    }
+</style> 
+<body class="freelance"> 
+<!-- Le contenu de la page sera ajoute ici --> 
+ <!--navbar-->
+ <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top">
+    <div class="container">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html">AfriTalent</a>
+        <!--bouton mobile-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <!--menu-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="freelance.html">Freelances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!--bouton-->
+                <a href="index.html" class="btn btn-primary ms-3">Rejoindre</a>
+            </div>
+    </div>
+ </nav>
+ <div class="container py-5">
+<h2 class="text-center mb-4" style="padding-top: 100px;">Nos Freelances</h2>
+<select class="form-select w-auto" id="filter">
+    <option value="all">Toutes les Catégories</option>
+    <option value="dev">Développement</option>
+    <option value="design">Design</option>
+    <option value="marketing">Marketing</option>
+</select>
+ </div>
+ <!--👤grille-->
+<div class="row g-4" id="freelancesList">
+<!--Profil1-->
+<div class="col-lg-4 col-md-6 freelances-card" data-category="dev">
+    <div class="card h-100">
+        <img src="image/h3.jpg" class="card-img-top" style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">MAMADOU BA</h5>
+            <p class="text-muted">Developpeur web</p>
+            <p>Spécialiseé en sites modernes et performants.</p>
+<p><strong>15 000 FCFA /h </strong></p>    
+
+
+<div class="rating">*****</div>
+<a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+</div>
+    </div>
+</div>
+<!--profil2-->
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/f1.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">ASTOU NDIAYE</h5>
+            <p class="text-muted">Graphiste</p>
+            <p>Création de logos et identités visuelles.</p>
+            <p><strong>12 000 FCFA/h</strong></p>
+            <div class="rating">*****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<!--profil3-->
+
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/f2.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">NDEYE FATOU DIOP</h5>
+            <p class="text-muted">Marketeuse digital</p>
+            <p>Expert en réseaux sociaux et publicité.</p>
+            <p><strong>10 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<!--profil 4 à 9-->
+
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/f3.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">ROKHAYA DIENG</h5>
+            <p class="text-muted">CEO expert</p>
+            <p>optimsation google et visiblité.</p>
+            <p><strong>10 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/h4.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">BIRANE FALL</h5>
+            <p class="text-muted">Développeuse Mobile</p>
+            <p>Application Android & ios performantes.</p>
+            <p><strong>18 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/f5.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">FATOU BA</h5>
+            <p class="text-muted">UI/UX designer</p>
+            <p>Interfaces modernes et intuitives.</p>
+            <p><strong>14 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/f4.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">Mariama Fall</h5>
+            <p class="text-muted">Full Stack Dev</p>
+            <p>Backend & frontend sécurisés.</p>
+            <p><strong>20 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/h1jpg.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover; object-position: top;">
+        <div class="card-body">
+            <h5 class="card-title">CHEIKH DIOP</h5>
+            <p class="text-muted">Illustratrices</p>
+            <p>Illustrations créatives et uniques.</p>
+            <p><strong>9 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>x
+    </div>
+</div>
+<div class="col-lg-4 col-md-6 freelance-card" data-category="design">
+    <div class="card h-100">
+        <img src="image/h5.jpg" class="card-img-top"  style="width:545px; height: 300px; object-fit: cover;">
+        <div class="card-body">
+            <h5 class="card-title">ALIOUNE GUEYE</h5>
+            <p class="text-muted">community manager</p>
+            <p>gestion et animation des réseaux.</p>
+            <p><strong>8 000 FCFA/h</strong></p>
+            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- Bootstrap 5 via CDN : script JavaScript --> 
+<script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
+></script> 
+<!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,23 +1,99 @@
-<!DOCTYPE html>
+
+<DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>AfriTalent — contact</title> 
+<!-- Bootstrap 5 via CDN : feuille de style --> 
+<link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+<!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
+<body class="contact"> 
+<!-- Le contenu de la page sera ajoute ici --> 
+ <!--navbar-->
+ <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top">
+    <div class="container">
+        <!--logo-->
+        <a class="navbar-brand" href="index.html">AfriTalent</a>
+        <!--bouton mobile-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <!--menu-->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="freelance.html">Freelances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tarifs.html">Tarifs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!--bouton-->
+                <a href="index.html" class="btn btn-primary ms-3">Rejoindre</a>
+            </div>
+    </div>
+ </nav>
+<h1 align="center" class="titrecontact" style="padding-top: 100px; padding-bottom: 30px;">Contactez-nous</h1>
+<table width="100%" border="1" cellpaddng="20">
+    <tr>
+<!--===formulaire-->
+<td width="50%">
+    <form>
+        <!--nom-->
+        Nom: <br>
+        <input type="text" name="nom" required><br><br>
+        <!--prenom-->
+        Premon: <br>
+        <input type="text" name="prenom" required><br><br>
+        <!--email-->
+          Email: <br>
+        <input type="email" name="emal" required><br><br>
+<!--sujet-->
+Sujet: <br>
+<select name="sujet" required>
+    <option value="">--choisir</option>
+    <option value="">support</option>
+    <option value="">parteneriat</option>
+    <option value="">information</option>
+</select><br><br>
+<!--message-->  
+Message: <br>
+<textarea name="message" rows="5" cols="30" minlength="20" required></textarea><br><br>
+<button type="submit">Envoyer</button>
+ </form>
+</td>
+<!--infos contact-->
+<td width="50%">
+    <h3>INFORMATIONS</h3>
+    <p>Email: contact@afritalent.com</p>
+    <p>Téléphone:+221 78 000 00 00</p>
+    <p>Addresse: Dakar, Senegal</p>
+
+    <h3>LOCALISATION</h3>
+    <!--google maps-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.350374891501!2d-17.46762172174937!3d14.692767349202603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1732eee4f4607%3A0x6b39f76b854e4bc6!2sFreelancewaar%20-%20Agence%20de%20Marketing%20Digital%20Freelance!5e0!3m2!1sfr!2ssn!4v1776862008137!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</td>
+</tr>
+</table>
+<!-- Bootstrap 5 via CDN : script JavaScript --> 
+<script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
+></script> 
+<!-- Votre script JavaScript --> 
 <script src="js/main.js"></script>
 </body>
 </html>
