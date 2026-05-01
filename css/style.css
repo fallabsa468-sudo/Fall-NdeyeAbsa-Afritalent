@@ -1,0 +1,58 @@
+
+/*variable*/
+:root{
+    --primary:#0d6efd;
+    --secondary:#6f42c1;
+    --dark:#212529;
+    --light:#f8f9fa;
+    --text:#333;
+    --radius:10px;
+}
+/*=======navbar======*/
+.navbar{
+    background-color:rgba(78, 97, 192, 0.64);
+    padding: 0;
+    background: blue;
+}
+/*===reset(base)====*/
+.Acceuil{
+    padding: 0;
+    margin: 0;
+}
+/*logo*/
+.body{
+    padding-top: 75px;
+}
+
+.navbar-brand.logo{
+    font-weight: bold;
+    font-size: 22px;
+    color:black;
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    height: 65px !important;
+    width: auto !important;
+    display: block;
+}
+
+/*lien*/
+.nav-link{
+    margin-left: 15px;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+/*hover*/
+.nav-link:hover{
+    color: blue;
+}
+/*bouton*/
+.btn-primary{
+    border-radius: 20px;
+    padding: 6px 15px;
+}
