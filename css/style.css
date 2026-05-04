@@ -56,3 +56,234 @@
     border-radius: 20px;
     padding: 6px 15px;
 }
+/*===hero====*/
+.hero{
+    height: 100vh;
+    background: linear-gradient(to right,blue,red);
+    align-items: center;
+    color: white;
+    background: linear-gradient(120deg,blue,rgba(blue,#6f42c1));
+    padding: 100px 40px;
+    margin: 0;
+    width: 100%;
+    min-height: 500px;
+}
+/*titre*/
+.hero-title{
+    font-size: 50px;
+    font-size: 700;
+    line-height: 1.2;
+}
+/*texte*/
+.hero-subtitle{
+    font-size: 18px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+/*bouton*/
+.hero .btn{
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+/*image*/
+.hero_img{
+    max-width: 500%;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0,0, 0.2);
+    gap: 60px;
+}
+/*animaton*/
+@keyframes float{
+    0%{transform:translateY(0px)}
+    50%{transform: translateY(-10px);}
+    100%{ transform: translateY(0px);}
+}
+/*comment sa marche*/
+.how-it-work{
+    padding: 60px 20px ;
+    background:white;
+    text-align: center;
+     font-size: 2rem;
+    margin-bottom: 40px;
+}
+.how-it-work h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+/*grid*/
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+}
+/*cards*/
+.card{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0,0, 0.05);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.card  .step{
+    font-size: 0.9rem;
+    color: gray;
+}
+.card h3{
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+.card p{
+    font-size: 0.95rem;
+    color: #555;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+/*taille bento*/
+.card-large{
+    grid-column: span 1;
+    grid-row: span 2;
+
+ }
+ .card-wide{
+    grid-column: span 2;
+ }
+ 
+ /*=====categories=======*/
+ .categories{
+  padding: 60px 20px;
+  text-align: center;
+  background:white ;
+ }
+ .categories h2{
+    font-size: 2rem;
+    margin-bottom: 40px;
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(a),minmax(2, 2fr);
+
+ }
+ .card{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.05);
+ }
+ .card .p-3{
+    font-size: 40px;
+    margin-bottom: 15px;
+ }
+ .card h3{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+ }
+ .card p{
+    color: gray;
+ }
+ /*effet hover*/
+ .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30x rgba(0, 0,0, 0.15);
+    background: linear-gradient(135deg,blue,#9333ea);
+ }
+ .card:hover p{
+    color: #e0e7ff;
+ }
+ /*=====temoignage====*/
+ .temoignage .card{
+    border-radius: 15px;
+    transition: transform 0.1s ease-in-out;
+    background: rgba(164, 40, 40, 0.804);
+    color: black;
+}
+.temoignage .card:hover{
+    transform: translateY(-1px);
+}
+.stars{
+    font-size: 20px;
+}
+/*cta*/
+.cta{
+    position: relative;
+    background: url();
+    height: 350px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color:white;
+overflow: hidden;
+}
+/*overlay sombre*/
+.cta .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.6);
+    top: 0;
+    left: 0;
+}
+/*contenu*/
+.cta-content{
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+.cta-content p{
+    margin-bottom: 25px;
+    color: #ddd;
+}
+.cta-content h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+/*bouton*/
+.cta-btn{
+    background: rgba(5, 74, 225, 0.785);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.cta-btn:hover{
+    background: #9333ea;
+    transform: scale(1.03);
+}/*===footer===*/
+.footer a{
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 50%;
+}
+.footer a:hover{
+    color: #fff;
+    padding-left: 5px;
+    margin-top: 20%;
+    text-align: center;
+}
+.logo{
+    color: blue;
+    text-align: center;
+    margin-top: 20%;
+}
+.social-icons a{
+    color: #ccc;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.social-icon a:hover{
+    color: rgba(6, 6, 235, 0.668);
+    transform: scale(1.2);
+}

@@ -15,7 +15,7 @@ rel="stylesheet">
  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top">
     <div class="container">
         <!--logo-->
-        <a class="navbar-brand" href="index.html">AfriTalent</a>
+         <a class=" navbar-brand logo" href="index.html"><img src="image/logo.png" alt="logo AfriTalent">AfriTalent</a>
         <!--bouton mobile-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -48,14 +48,14 @@ rel="stylesheet">
 </head>
 <body> 
 <!-- Le contenu de la page sera ajoute ici --> 
-
-<section class="pricing-section container py-5" style="padding-top: 100px;">
-    <h2 class="text-center mb-5">NOS TARIFS</h2>
-    <div class="row g-4">
+<section class="pricing-section container-fluid pt-2 pb-5">
+    <h2 class="text-center mb-4 pt-0 mt-0">NOS TARIFS</h2>
+    <div class="row g-4 px-4">
         <!--gratuit-->
-<div class="cold-md-4">
-    <div class="card princing-card">
-<div class="card-body text-center">
+<div class="col-md-4">
+    <div class="card h-100 shadow">
+    
+<div class="card-body text-center p-4">
 <h4>GRATUIT</h4>
 <h2>0 FCFA <span>/mois</span></h2>
 <ul class="list-unstyled mt-4">
@@ -69,9 +69,9 @@ rel="stylesheet">
 </div>
 </div>
 <!--pro (populaire)-->
-    <div class="card princing-card ">
-        <div class="badge-popular"></div>
-<div class="card-body text-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow border-primary">
+<div class="card-body text-center p-4">
     <h4>PRO</h4>
     <h2>10 000 FCFA <span>/mois</span></h2>
     <ul class="list-unstyled mt-4">
@@ -85,8 +85,9 @@ rel="stylesheet">
     </div>
 </div>
 <!--entreprise-->
-    <div class="card princing-card ">
-<div class="card-body text-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow">
+<div class="card-body text-center p-4">
     <h4>ENTREPRISE</h4>
     <h2>25 000 FCFA <span>/mois</span></h2>
     <ul class="list-unstyled mt-4">
@@ -96,14 +97,13 @@ rel="stylesheet">
         <li><i class="bi bi-check text-success"></i>visibilité maximale</li>
     </ul>
     <button class="btn btn-outline-primary w-100 mt-3">Contacter</button>
+    </div>
 </div>
     </div>
-</div>  
 </div>
-</section>
-
+</div>
 <!--faq-->
-<section class="container py-5">
+<section class="container-fluid pt-3">
     <h2 class="text-center mb-4">FAQ</h2>
     <div class="accordion" id="faq">
         <div class="accordion-item">
@@ -167,6 +167,7 @@ rel="stylesheet">
             </div>
         </div>
     </div>
+</section>
 </section>
 <!-- Bootstrap 5 via CDN : script JavaScript -->
 <script
