@@ -10,16 +10,17 @@
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
 rel="stylesheet"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <!-- Votre feuille de style personnelle --> 
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="apropos"> 
+<body> 
 <!-- Le contenu de la page sera ajoute ici --> 
  <!--navbar-->
- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top">
+ <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top p-4">
     <div class="container">
         <!--logo-->
-        <a class=" navbar-brand logo" href="index.html"><img src="image/WhatsApp Image 2026-05-29 at 20.59.11.jpeg" alt="logo AfriTalent">AfriTalent</a>
+        <a class=" navbar-brand logo" href="index.html"><img src="image/afritalent.jpg" alt="logo AfriTalent"></a>
         <!--bouton mobile-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
@@ -43,16 +44,19 @@ rel="stylesheet">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <a id="theme-toggle" class=" btn btn-outline-light">🌙</a>
                 <!--bouton-->
                 <a href="index.html" class="btn btn-primary ms-3">Rejoindre Afritalent</a>
-                    <a id="theme-toggle" class=" btn btn-outline-light">🌙</a>
+                    
             </div>
     </div>
  </nav>
- <div class="container">
+
+<section class="apropos">
 <!--=====notre histoire====-->
-<section class="mb-5" style="padding-top: 100px; padding: -500px;">
-<h2 class="section-title" style="color: black;">NOTRE HISTOIRE</h2>
+<section class="mb-5" style="padding-top: 100px; padding: -1000px;" fade-in>
+    <div class="container">
+<h2 class="section-title mt-5" style="color: black;">NOTRE HISTOIRE</h2>
 <div class="row align-items-center justify-content-center g-4">
     <div class="col-md-6">
         <p class="story-text">AfriTalent est née avec une mission  simple :connecter les talents africains aux meilleures opportunités.Depuis sa création, la plateforme a permis à des milliers de freelances et d'entreprises de collaborer efficacement .</p>
@@ -61,13 +65,13 @@ rel="stylesheet">
         </p>
     </div>
     <div class="col-md-6 text-center">
-        <img src="image/afritalent.jpg" width="500" class="img-fluid story-img" alt="notre histoire">
+        <img src="image/afritalent.jpg" width="500" class="img-fluid story-img" style="border-radius: 50% 10% 50% 10%;" >
     </div>
 </div>
 </div>
  </section>
 <!--====equipe====-->
-<section class="mb-5">
+<section class="mb-5" fade-in>
     <h2 class="section-title" style="color: black;">Notre equipe</h2>
     <div class="row">
         <div class="col-md-3">
@@ -79,6 +83,13 @@ rel="stylesheet">
                     <i class="bi bi linkedin"></i>
                     <i class="bi bi twitter"></i>
                 </div>
+                <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
+    </div>
             </div>
         </div>
 
@@ -91,6 +102,13 @@ rel="stylesheet">
                     <i class="bi bi linkedin"></i>
                     <i class="bi bi twitter"></i>
                 </div>
+                <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
+    </div>
             </div>
         </div>
          <div class="col-md-3">
@@ -102,6 +120,13 @@ rel="stylesheet">
                     <i class="bi bi linkedin"></i>
                     <i class="bi bi instagram"></i>
                 </div>
+                <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
+    </div>
             </div>
         </div>
          <div class="col-md-3">
@@ -113,12 +138,19 @@ rel="stylesheet">
                     <i class="bi bi linkedin"></i>
                     <i class="bi bi facebook"></i>
                 </div>
+                <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
+    </div>
             </div>
         </div>
     </div>
 </section>
 <!--=====valeurs=====-->
-<section class="mb-5">
+<section class="mb-5" fade-in>
     <h1 class="section-title" style="color: black;">Nos valeurs</h1>
     <div class="row">
         <div class="col-md-3 value-box">
@@ -144,7 +176,7 @@ rel="stylesheet">
     </div>
 </section>
 <!--===chiffre clés-->
-<SECtion>
+<SECtion fade-in>
 <h2 class="section-title" style="color: black;">CHIFFRE CLES</h2>
 <div class="bento">
     <div class="bento-item big">
@@ -165,7 +197,7 @@ rel="stylesheet">
     </div>
 </div>
 </section>
-</div>
+</section>
 <!--footer-->
  <footer class=" bg-dark text-light pt-5 pb-3">
     <div class="container">
@@ -189,7 +221,6 @@ rel="stylesheet">
 <div class="col-md-3 mb-4">
     <h5 class="fw-bold">Ressources</h5>
     <ul class="list-unstyled">
-        <li><a href="#"  class="text-light text decoration none">Blog</a></li>
         <li><a href="tarifs.html"  class="text-light text decoration none">FAQ</a></li>
         <li><a href="#"  class="text-light text decoration none">Aide</a></li>
         <li><a href="#"  class="text-light text decoration none">Conditions</a></li>
@@ -216,11 +247,15 @@ rel="stylesheet">
     </div> 
     </div>
  </footer>
+
 <!-- Bootstrap 5 via CDN : script JavaScript --> 
 <script 
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
 ></script> 
 <!-- Votre script JavaScript -->
+ <button id="backToTop" title="Retour en haut">
+  <i class="bi bi-chevron-up"></i>
+</button>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,41 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>AfriTalent — freelance</title> 
-<!-- Bootstrap 5 via CDN : feuille de style --> 
-<link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- Votre feuille de style personnelle --> 
-<link rel="stylesheet" href="css/style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriTalent — freelance</title>
+    <!-- Bootstrap 5 via CDN : feuille de style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Votre feuille de style personnelle -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-    body{
-        background-color:white ;
+    body {
+        background-color: white;
     }
-    .card img{
+
+    .card img {
         height: 200px;
         object-fit: cover;
     }
-    .rating{
-        color:yellow;
+
+    .rating {
+        color: yellow;
     }
-</style> 
-<body> 
-<!-- Le contenu de la page sera ajoute ici --> 
- <!--navbar-->
- <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top">
-    <div class="container">
-        <!--logo-->
-        <a class=" navbar-brand logo" href="index.html"><img src="image/WhatsApp Image 2026-05-29 at 20.59.11.jpeg" alt="logo AfriTalent">AfriTalent</a>
-        <!--bouton mobile-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+</style>
+
+<body>
+    <!-- Le contenu de la page sera ajoute ici -->
+    <!--navbar-->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-blue shadow-sm fixed-top  p-4">
+        <div class="container">
+            <!--logo-->
+            <a class=" navbar-brand logo" href="index.html"><img src="image/afritalent.jpg" alt="logo AfriTalent"></a>
+            <!--bouton mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <!--menu-->
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
@@ -55,148 +57,214 @@ rel="stylesheet">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
+                <a id="theme-toggle" class=" btn btn-outline-light">🌙</a>
                 <!--bouton-->
                 <a href="index.html" class="btn btn-primary ms-3">Rejoindre Afritalent</a>
-                    <a id="theme-toggle" class=" btn btn-outline-light">🌙</a>
+
             </div>
-    </div>
- </nav>
- <section class="freelance">
- <div class="container py-5">
-<h2 class="text-center mb-4" style="padding-top: 100px;">Nos Freelances</h2>
-<select  id="filter">
-    <option value="all">Toutes les Catégories</option>
-    <option value="dev">Développeur</option>
-    <option value="design">Designer</option>
-    <option value="marketing">Marketing</option>
-    <option value="Graphiste">Graphiste</option>
-    <option value="Illustratrices">Illustratrices</option>
-    <option value="CEO">CEO</option>
-</select>
- </div>
- <!--👤grille-->
-<div class="row g-4" id="freelancesList">
-<!--Profil1-->
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/h3.jpg" class="card-img-top" >
-        <div class="card-body" data-category="dev">
-            <h5 class="card-title">MAMADOU BA</h5>
-            <p class="text-muted">Developpeur web</p>
-          <p>Spécialiseé en sites modernes et performants.</p>
-<p><strong>15 000 FCFA /h </strong></p>     
+        </div>
+    </nav>
+    <section class="freelance" style="background:  rgb(5, 202, 189);" fade-in>
+        <div class="container py-5">
+            <h2 class="text-center mb-4" style="padding-top: 100px;">Nos Freelances</h2>
+            <select id="filter">
+                <option value="all">Toutes les Catégories</option>
+                <option value="dev">Développeur</option>
+                <option value="design">Designer</option>
+                <option value="marketing">Marketing</option>
+                <option value="Graphiste">Graphiste</option>
+                <option value="Illustratrices">Illustratrices</option>
+                <option value="CEO">CEO</option>
+            </select>
+        </div>
+        <!--👤grille-->
+        <div class="row g-4" id="freelancesList">
+            <!--Profil1-->
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/h3.jpg" class="card-img-top">
+                    <div class="card-body" data-category="dev">
+                        <h5 class="card-title">MAMADOU BA</h5>
+                        <p class="text-muted">Developpeur web</p>
+                        <p>Spécialiseé en sites modernes et performants.</p>
+                        <p><strong>15 000 FCFA /h </strong></p>
 
 
-<div class="rating">*****</div>
-<a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-</div>
+                        <div class="rating">*****</div>
+                        <a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                        
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<!--profil2-->
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/f1.jpg" class="card-img-top">
-        <div class="card-body" data-category="Graphiste">
-            <h5 class="card-title">ASTOU NDIAYE</h5>
-            <p class="text-muted">Graphiste</p>
-            <p>Création de logos et identités visuelles.</p>
-            <p><strong>12 000 FCFA/h</strong></p>
-            <div class="rating">*****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+                
+            </div>
+            <!--profil2-->
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/f1.jpg" class="card-img-top">
+                    <div class="card-body" data-category="Graphiste">
+                        <h5 class="card-title">ASTOU NDIAYE</h5>
+                        <p class="text-muted">Graphiste</p>
+                        <p>Création de logos et identités visuelles.</p>
+                        <p><strong>12 000 FCFA/h</strong></p>
+                        <div class="rating">*****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<!--profil3-->
+                </div>
+            </div>
+            <!--profil3-->
 
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/f2.jpg" class="card-img-top">
-        <div class="card-body" data-category="marketing">
-            <h5 class="card-title">NDEYE FATOU DIOP</h5>
-            <p class="text-muted">Marketeuse digital</p>
-            <p>Expert en réseaux sociaux et publicité.</p>
-            <p><strong>10 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/f2.jpg" class="card-img-top">
+                    <div class="card-body" data-category="marketing">
+                        <h5 class="card-title">NDEYE FATOU DIOP</h5>
+                        <p class="text-muted">Marketeuse digital</p>
+                        <p>Expert en réseaux sociaux et publicité.</p>
+                        <p><strong>10 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<!--profil 4 à 9-->
+                </div>
+            </div>
+            <!--profil 4 à 9-->
 
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/f3.jpg" class="card-img-top">
-        <div class="card-body"  data-category="CEO">
-            <h5 class="card-title">ROKHAYA DIENG</h5>
-            <p class="text-muted">CEO expert</p>
-            <p>optimsation google et visiblité.</p>
-            <p><strong>10 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/f3.jpg" class="card-img-top">
+                    <div class="card-body" data-category="CEO">
+                        <h5 class="card-title">ROKHAYA DIENG</h5>
+                        <p class="text-muted">CEO expert</p>
+                        <p>optimsation google et visiblité.</p>
+                        <p><strong>10 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/h4.jpg" class="card-img-top">
-        <div class="card-body" data-category="dev">
-            <h5 class="card-title">BIRANE FALL</h5>
-            <p class="text-muted">Développeuse Mobile</p>
-            <p>Application Android & ios performantes.</p>
-            <p><strong>18 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/h4.jpg" class="card-img-top">
+                    <div class="card-body" data-category="dev">
+                        <h5 class="card-title">BIRANE FALL</h5>
+                        <p class="text-muted">Développeuse Mobile</p>
+                        <p>Application Android & ios performantes.</p>
+                        <p><strong>18 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/f5.jpg" class="card-img-top">
-        <div class="card-body" data-category="design">
-            <h5 class="card-title">FATOU BA</h5>
-            <p class="text-muted">UI/UX designer</p>
-            <p>Interfaces modernes et intuitives.</p>
-            <p><strong>14 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/f5.jpg" class="card-img-top">
+                    <div class="card-body" data-category="design">
+                        <h5 class="card-title">FATOU BA</h5>
+                        <p class="text-muted">UI/UX designer</p>
+                        <p>Interfaces modernes et intuitives.</p>
+                        <p><strong>14 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/f4.jpg" class="card-img-top">
-        <div class="card-body" data-category="dev">
-            <h5 class="card-title">Mariama Fall</h5>
-            <p class="text-muted">Full Stack Dev</p>
-            <p>Backend & frontend sécurisés.</p>
-            <p><strong>20 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/f4.jpg" class="card-img-top">
+                    <div class="card-body" data-category="dev">
+                        <h5 class="card-title">Mariama Fall</h5>
+                        <p class="text-muted">Full Stack Dev</p>
+                        <p>Backend & frontend sécurisés.</p>
+                        <p><strong>20 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/h1jpg.jpg" class="card-img-top">
-        <div class="card-body" data-category="Illustratrices">
-            <h5 class="card-title">CHEIKH DIOP</h5>
-            <p class="text-muted">Illustratrices</p>
-            <p>Illustrations créatives et uniques.</p>
-            <p><strong>9 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/h1jpg.jpg" class="card-img-top">
+                    <div class="card-body" data-category="Illustratrices">
+                        <h5 class="card-title">CHEIKH DIOP</h5>
+                        <p class="text-muted">Illustratrices</p>
+                        <p>Illustrations créatives et uniques.</p>
+                        <p><strong>9 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-<div class="col-lg-4 col-md-6 freelance-card">
-    <div class="card h-100">
-        <img src="image/h5.jpg" class="card-img-top">
-        <div class="card-body" data-category="marketing">
-            <h5 class="card-title">ALIOUNE GUEYE</h5>
-            <p class="text-muted">community manager</p>
-            <p>gestion et animation des réseaux.</p>
-            <p><strong>8 000 FCFA/h</strong></p>
-            <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
-        </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 freelance-card">
+                <div class="card h-100">
+                    <img src="image/h5.jpg" class="card-img-top">
+                    <div class="card-body" data-category="marketing">
+                        <h5 class="card-title">ALIOUNE GUEYE</h5>
+                        <p class="text-muted">community manager</p>
+                        <p>gestion et animation des réseaux.</p>
+                        <p><strong>8 000 FCFA/h</strong></p>
+                        <div class="rating">****</div><a href="#" class="btn btn-primary mt-2">Voir le profil</a>
+                    </div>
+                    <div>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://facebook"><i class="fa-brands fa-facebook fa-2x"></i></a>
+          <a href="https://twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        
     </div>
-</div>
-</div>
-</div>
-</section>
-<!--footer-->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--footer-->
  <footer class=" bg-dark text-light pt-5 pb-3">
     <div class="container">
         <div class="row">
@@ -219,7 +287,6 @@ rel="stylesheet">
 <div class="col-md-3 mb-4">
     <h5 class="fw-bold">Ressources</h5>
     <ul class="list-unstyled">
-        <li><a href="#"  class="text-light text decoration none">Blog</a></li>
         <li><a href="tarifs.html"  class="text-light text decoration none">FAQ</a></li>
         <li><a href="#"  class="text-light text decoration none">Aide</a></li>
         <li><a href="#"  class="text-light text decoration none">Conditions</a></li>
@@ -246,11 +313,14 @@ rel="stylesheet">
     </div> 
     </div>
  </footer>
-<!-- Bootstrap 5 via CDN : script JavaScript --> 
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script> 
-<!-- Votre script JavaScript --> 
-<script src="js/main.js"></script>
+
+    <!-- Bootstrap 5 via CDN : script JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Votre script JavaScript -->
+     <button id="backToTop" title="Retour en haut">
+  <i class="bi bi-chevron-up"></i>
+</button>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
