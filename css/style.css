@@ -332,6 +332,12 @@ overflow: hidden;
     margin: 0;
     background: rgb(5, 202, 189);
 }
+.error-message {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  min-height: 18px;
+}
 /*titre*/
 .titrecontact{
     text-align: center;
@@ -483,6 +489,33 @@ footer{
     object-fit: cover !important;
     object-position: 50% 15% !important;
 }
+
+.filter-buttons-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filter-buttons-container .btn-filter {
+  display: inline-block !important;
+  width: auto !important;
+  padding: 10px 24px;
+  border: 2px solid #3b82f6;
+  background: white;
+  color: #3b82f6;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.filter-buttons-container .btn-filter.active,
+.filter-buttons-container .btn-filter:hover {
+  background: #3b82f6;
+  color: white;
+}
+
+
 /*======apropos======*/
 
 .apropos{
@@ -553,7 +586,7 @@ body {
 }
 /*titre*/
 .container{
-    max-width: 1100px;
+    max-width: 1500px;
 }
 .section-title{
     text-align: center;

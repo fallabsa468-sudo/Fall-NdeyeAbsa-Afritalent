@@ -51,35 +51,43 @@
                 </div>
             </div>
         </nav>
-        <section class="contact-section" fade-in>
-            <h1 class="titrecontact" style="color: black;">Contactez-nous</h1>
+        <section class="contact-section">
+          <div class="container fade-in">
+              <h1 class="titrecontact" style="color: black;">Contactez-nous</h1>
 
             <div class="contact-wrapper">
                 <!-- Formulaire -->
                 <div class="contact-form">
-                    <form>
-                        <label>Nom :</label>
-                        <input type="text" name="nom" required>
+                    <form id="contactForm">
+  <label>Nom :</label>
+  <input type="text" id="nom" name="nom">
+  <small id="error-nom" class="error-message text-danger"></small>
 
-                        <label>Prénom :</label>
-                        <input type="text" name="prenom" required>
+  <label>Prénom :</label>
+  <input type="text" id="prenom" name="prenom">
+  <small id="error-prenom" class="error-message text-danger"></small>
 
-                        <label>Email :</label>
-                        <input type="email" name="email" required>
+  <label>Email :</label>
+  <input type="email" id="email" name="email">
+  <small id="error-email" class="error-message text-danger"></small>
 
-                        <label>Sujet :</label>
-                        <select name="sujet" required>
-                            <option value="">-- Choisir --</option>
-                            <option value="support">Support</option>
-                            <option value="partenariat">Partenariat</option>
-                            <option value="information">Information</option>
-                        </select>
+  <label>Sujet :</label>
+  <select id="sujet" name="sujet">
+    <option value="">-- Choisir --</option>
+    <option value="support">Support</option>
+    <option value="partenariat">Partenariat</option>
+    <option value="information">Information</option>
+  </select>
+  <small id="error-sujet" class="error-message text-danger"></small>
 
-                        <label>Message :</label>
-                        <textarea name="message" rows="5" minlength="20" required></textarea>
+  <label>Message :</label>
+  <textarea id="message" name="message" rows="5"></textarea>
+  <small id="error-message" class="error-message text-danger"></small>
 
-                        <button type="submit">Envoyer</button>
-                    </form>
+  <div id="success-message" class="text-success mt-3"></div>
+  
+  <button type="submit">Envoyer</button>
+</form>
                 </div>
 
                 <!-- Infos contact -->
@@ -95,6 +103,7 @@
                         allowfullscreen loading="lazy"></iframe>
                 </div>
             </div>
+          </div>
         </section>
         <!--footer-->
  <footer class=" bg-dark text-light pt-5 pb-3">
