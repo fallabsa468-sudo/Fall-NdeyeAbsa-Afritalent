@@ -59,7 +59,7 @@
 /*===hero====*/
 .hero{
     height: 100vh;
-background:linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../image/heo.jpg');
+background:linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../image/hero.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -271,7 +271,7 @@ overflow: hidden;
     top: 0;
     left: 0;
 }
-/*contenu*/
+/*contenu cta*/
 .cta-content{
     position: relative;
     z-index: 2;
@@ -338,7 +338,7 @@ overflow: hidden;
   margin-top: 4px;
   min-height: 18px;
 }
-/*titre*/
+/*titre contact*/
 .titrecontact{
     text-align: center;
     /* margin: 40px 0 20px; */
@@ -361,7 +361,7 @@ td{
     vertical-align: top;
     padding: 30px;
 }
-/*========formulaire=========*/
+/*========formulaire dans contact=========*/
 form input,
 form select,
 form textarea{
@@ -522,6 +522,7 @@ footer{
     background: rgb(5, 202, 189) ; 
 }   
 /*=====tarifs====*/
+
 /*espace blanc sous navbar*/
 body{
     padding-top: 56px !important;
@@ -662,6 +663,7 @@ node_modules/
     font-weight: bold;
     color: #0d6efd;
 }
+/*stats*/
 .stats-container {
   display: flex;
   justify-content: space-around; /* espace égal entre les 3 */
@@ -684,6 +686,7 @@ node_modules/
   color: #333;
   margin-top: 10px;
 }
+/*nav au scroll */
 
 #navbar {
   background:rgb(0, 191, 255);
@@ -697,6 +700,7 @@ node_modules/
   padding: 12px 40px; /* nav plus petite */
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+/*dark mode */
 
 body.dark-mode #navbar.scrolled {
   background: #0f172a !important;
@@ -707,9 +711,6 @@ body.dark-mode {
   color: #e0e0e0 !important;
   transition: 0.3s;
 }
-
-
-
 body.dark-mode nav,
 body.dark-mode .navbar {
   background-color: #1f1f1f !important;
